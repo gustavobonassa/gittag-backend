@@ -9,7 +9,7 @@ class UserController {
 
     if (!gbUser.id) {
       return res.json({
-        error: "Usuario nao existe no Github",
+        error: "Usuário não existe no GitHub",
       });
     }
 
@@ -37,7 +37,7 @@ class UserController {
       })
     ) {
       return res.status(400).json({
-        error: "Usuario ja existe",
+        error: "Usuário já existe",
       });
     }
 

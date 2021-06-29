@@ -7,7 +7,7 @@ module.exports = async (req, res, next) => {
 
   if (!authHeader) {
     return res.status(401).json({
-      error: "Token not provided",
+      error: "Cade a token, parceiro?",
     });
   }
 
@@ -21,7 +21,7 @@ module.exports = async (req, res, next) => {
     return next();
   } catch (err) {
     return res.status(401).json({
-      error: "Token invalid",
+      error: "Token invalida",
     });
   }
 };
